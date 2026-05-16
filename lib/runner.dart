@@ -7,6 +7,7 @@ import 'init_step.dart';
 import 'steps/analysis_step.dart';
 // import 'steps/architecture_step.dart';
 // import 'steps/localization_step.dart';
+import 'steps/localization_step.dart';
 import 'steps/pubspec_step.dart';
 import 'steps/readme_step.dart';
 // import 'steps/theme_step.dart';
@@ -46,7 +47,7 @@ class InitRunner {
       AnalysisStep(),
       // ArchitectureStep(),
       // ThemeStep(),
-      // LocalizationStep(),
+      LocalizationStep(),
       ReadmeStep(),
     ];
 
