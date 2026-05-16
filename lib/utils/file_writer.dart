@@ -5,10 +5,10 @@ import 'package:path/path.dart' as p;
 import 'logger.dart';
 
 class FileWriter {
-  /// Writes [content] to [filePath].
-  ///
-  /// Parent directories are created automatically.
-  /// Skips silently when the file already exists and [overwrite] is false.
+  // Writes [content] to [filePath].
+  //
+  // Parent directories are created automatically.
+  // Skips silently when the file already exists and [overwrite] is false.
   static Future<void> write(
     String filePath,
     String content, {

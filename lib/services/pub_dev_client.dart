@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
 
-/// Fetches package metadata from pub.dev.
+// Fetches package metadata from pub.dev.
 class PubDevClient {
   static const _baseUrl = 'https://pub.dev/api/packages';
 
-  /// Returns the latest stable version string for [package].
-  /// Throws an [Exception] if the package is not found or the request fails.
+  // Returns the latest stable version string for [package].
+  // Throws an [Exception] if the package is not found or the request fails.
   Future<String> latestVersion(String package) async {
     final client = HttpClient();
     try {

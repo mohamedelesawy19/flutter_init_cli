@@ -53,6 +53,7 @@ The goal is to eliminate repetitive setup work and standardize Flutter project c
 | 🔧 State Management | Adds `bloc` or `riverpod` dependencies based on `--state` |
 | 📏 Lint Rules | Generates a strict `analysis_options.yaml` on top of `flutter_lints` |
 | 🌍 Localization | Initializes `l10n` support with English and Arabic ARB files |
+| 📍 Routing | Sets up `go_router` with a scalable routing structure |
 | 📄 README Generator | Creates a clean, editable `README.md` template |
 | 🧹 Safe Validation | Stops if `pubspec.yaml` is missing |
 | ⚡ Fast Setup | Runs in seconds |
@@ -114,10 +115,11 @@ flutter_init_cli --help
 
 After running the CLI, it automatically:
 
-* Configures English and Arabic localization with `l10n.yaml` and `.arb` files
 * Rewrites `pubspec.yaml` with curated dependencies and latest versions from pub.dev
 * Generates a strict `analysis_options.yaml` based on `flutter_lints`
 * Replaces the project `README.md` with a ready-to-edit template
+* Configures English and Arabic localization with `l10n.yaml` and `.arb` files
+* Sets up a scalable routing system using `go_router` (AppRouter, AppRoutes, and modular route files)
 * Requires internet access to fetch dependency versions
 
 ---

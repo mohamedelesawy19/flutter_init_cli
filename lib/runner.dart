@@ -4,12 +4,13 @@ import 'package:path/path.dart' as p;
 
 import 'init_context.dart';
 import 'init_step.dart';
-import 'steps/analysis_step.dart';
 // import 'steps/architecture_step.dart';
 // import 'steps/localization_step.dart';
-import 'steps/localization_step.dart';
 import 'steps/pubspec_step.dart';
+import 'steps/analysis_step.dart';
 import 'steps/readme_step.dart';
+import 'steps/localization_step.dart';
+import 'steps/routing_step.dart';
 // import 'steps/theme_step.dart';
 import 'utils/logger.dart';
 
@@ -48,6 +49,7 @@ class InitRunner {
       // ArchitectureStep(),
       // ThemeStep(),
       LocalizationStep(),
+      RoutingStep(),
       ReadmeStep(),
     ];
 

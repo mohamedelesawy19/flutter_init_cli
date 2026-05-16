@@ -77,7 +77,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 // Project imports:
 import '/src/config/localization/generated/app_localizations.dart';
 
-/// Custom localization delegate for the app.
+// Custom localization delegate for the app.
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {
   const AppLocalizationDelegate();
 
@@ -93,7 +93,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {
   bool shouldReload(AppLocalizationDelegate old) => false;
 }
 
-/// Central localization configuration — pass these directly to [MaterialApp].
+// Central localization configuration — pass these directly to [MaterialApp].
 class LocalizationConfig {
   const LocalizationConfig._();
 
@@ -109,17 +109,17 @@ class LocalizationConfig {
     GlobalCupertinoLocalizations.delegate,
   ];
 
-  /// Returns the device locale when supported, otherwise falls back to Arabic.
+  // Returns the device locale when supported, otherwise falls back to Arabic.
   static Locale getDeviceLocale() {
     final deviceLocale = PlatformDispatcher.instance.locale;
     if (supportedLocales.contains(deviceLocale)) return deviceLocale;
     return const Locale('ar');
   }
 
-  /// Returns `true` when [locale] uses a right-to-left script.
+  // Returns `true` when [locale] uses a right-to-left script.
   static bool isRTL(Locale locale) => locale.languageCode == 'ar';
 
-  /// Returns the [TextDirection] for [locale].
+  // Returns the [TextDirection] for [locale].
   static TextDirection getTextDirection(Locale locale) =>
       isRTL(locale) ? TextDirection.rtl : TextDirection.ltr;
 }
@@ -134,18 +134,18 @@ import 'package:flutter/material.dart';
 // Project imports:
 import '/src/config/localization/generated/app_localizations.dart';
 
-/// Convenience extensions on [BuildContext] for localization.
+// Convenience extensions on [BuildContext] for localization.
 extension LocalizationExtension on BuildContext {
-  /// Short-hand accessor for [AppLocalizations].
+  // Short-hand accessor for [AppLocalizations].
   AppLocalizations get l10n => AppLocalizations.of(this)!;
 
-  /// The active [Locale] for this context.
+  // The active [Locale] for this context.
   Locale get locale => Localizations.localeOf(this);
 
-  /// `true` when the current locale uses a right-to-left script.
+  // `true` when the current locale uses a right-to-left script.
   bool get isRTL => locale.languageCode == 'ar';
 
-  /// The [TextDirection] derived from the current locale.
+  // The [TextDirection] derived from the current locale.
   TextDirection get textDirection =>
       isRTL ? TextDirection.rtl : TextDirection.ltr;
 }
@@ -168,7 +168,10 @@ extension LocalizationExtension on BuildContext {
 {
   "@@locale": "ar",
 
-  "appName": "اسم التطبيق"
+  "appName": "اسم التطبيق",
+  "@appName": {
+    "description": "اسم التطبيق"
+  }
 }
 ''';
 }

@@ -1,4 +1,4 @@
-/// Data shared across all initialization steps.
+// Data shared across all initialization steps.
 class InitContext {
   const InitContext({
     required this.projectPath,
