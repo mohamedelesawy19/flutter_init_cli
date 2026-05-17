@@ -36,6 +36,7 @@ Instead of manually configuring every project after `flutter create`, the CLI ap
 - Strict `analysis_options.yaml`
 - A ready-to-edit README template
 - Built-in localization setup (English & Arabic)
+- Pre-configured Material 3 Theme (Colors, Text Theme, and Theme Data)
 
 The goal is to eliminate repetitive setup work and standardize Flutter project configuration across teams and personal projects.
 
@@ -53,6 +54,7 @@ The goal is to eliminate repetitive setup work and standardize Flutter project c
 | 🔧 State Management | Adds `bloc` or `riverpod` dependencies based on `--state` |
 | 📏 Lint Rules | Generates a strict `analysis_options.yaml` on top of `flutter_lints` |
 | 🌍 Localization | Initializes `l10n` support with English and Arabic ARB files |
+| 🎨 Theme | Generates a complete Material 3 theme (Colors, TextTheme, AppTheme) |
 | 📍 Routing | Sets up `go_router` with a scalable routing structure |
 | 📄 README Generator | Creates a clean, editable `README.md` template |
 | 🧹 Safe Validation | Stops if `pubspec.yaml` is missing |
@@ -118,6 +120,7 @@ After running the CLI, it automatically:
 * Rewrites `pubspec.yaml` with curated dependencies and latest versions from pub.dev
 * Generates a strict `analysis_options.yaml` based on `flutter_lints`
 * Replaces the project `README.md` with a ready-to-edit template
+* Generates a comprehensive Material 3 theme system (AppColors, AppTextTheme, and AppTheme)
 * Configures English and Arabic localization with `l10n.yaml` and `.arb` files
 * Sets up a scalable routing system using `go_router` (AppRouter, AppRoutes, and modular route files)
 * Requires internet access to fetch dependency versions

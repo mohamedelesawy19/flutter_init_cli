@@ -12,6 +12,7 @@ import 'steps/readme_step.dart';
 import 'steps/localization_step.dart';
 import 'steps/routing_step.dart';
 // import 'steps/theme_step.dart';
+import 'steps/theme_step.dart';
 import 'utils/logger.dart';
 
 class InitRunner {
@@ -50,6 +51,7 @@ class InitRunner {
       // ThemeStep(),
       LocalizationStep(),
       RoutingStep(),
+      ThemeStep(),
       ReadmeStep(),
     ];
 
